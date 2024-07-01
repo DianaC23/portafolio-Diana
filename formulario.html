@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--Formulario-->
+     <div id="comunicarse">
+        <H2>Formulario para contactarnos contigo</H2>
+        <form name="comunicacion" method="get" action="#" autocomplete="on">
+            <label for="name">
+                Ingrese su nombre<input type="text" id="name" placeholder="Ej:Diana Cruz" required>
+            </label>
+            <label for="gene">
+                Ingrese su genero<select name="gen" id="genero">
+                    <option value=" "> </option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femeino</option>
+                    <option value="NB">No Binario</option>
+                    <option value="O">Otro</option>
+                </select>
+            </label>
+            <label for="tel">
+                tel/cel<input type="tel" name="telefono" id="tele">
+            </label>
+            <label for="date">
+                ¿Que dia nos podemos comunicar contigo?<input type="datetime-local" name="fechayhora" id="feyho">
+            </label>
+            <label for="text">
+                Motivo por el que te comunicas <select name="trabajo" id="trabajone" required>
+                <option value=" "> </option>
+                <option value="Pagina web">Pagina web</option>
+                <option value="Dessarrollar videojuego">Dessarrollar videojuego</option>
+                <option value="Ciberseguridad">Ciberseguridad</option>
+                <option value="Diseño">Diseño(Illustrator o photodhop)</option>
+                <option value="Modelado 3D">Modelado 3D</option>
+                </select>
+            </label>
+            <label for="comentario">
+                Comentario del proyecto <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+            <label for="correo">
+                correo<input type="email" name="correo" id="email" required>
+            </label>
+            <a href="./enviarfor.html">
+                <input class="btn-volver" type="button" value="Enviar">
+            </a>
+        </form>
+    </div>
+    <hr>
+    <!--fin del formulario-->
+</body>
+</html>
